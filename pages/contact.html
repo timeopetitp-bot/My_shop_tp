@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - My Shop</title>
+</head>
+
+<body>
+    <header>
+        <!-- Titre Principal -->
+        <h1>My Shop</h1>
+        <!-- Menu de navigation simple -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Acceuil</a>
+                </li>
+                <li>
+                    <a href="about.html">A propos</a>
+                </li>
+                <li>
+                    <a href="products.html">Produits</a>
+                </li>
+                <li>
+                    <a href="signup.html">Inscription</a>
+                </li>
+                <li>
+                    <a href="login.html">Connexion</a>
+                </li>
+                <li>
+                    <a href="cart.html">Panier<a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+            <form >
+                <h2>Contactez-Nous</h2>
+
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" placeholder="Votre nom" required> <br>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" placeholder="exemple@gmail.com" required> <br>
+
+                <label for="msg">Message :</label>
+                <textarea rows="2" id="msg" placeholder="Votre message" required></textarea> <br>
+
+                <button type="submit">Envoyer</button>
+            </form>
+    </main>
+
+
+
+    <!-- action : ou on envoie les donneés du formulaire pour faire le traitement -->
+    <!-- method : comment envoyer les données (GET/POST) -->
+    <!-- GET : récupération des données (rechercher/filtre) -->
+    <!-- POST : Créer/Ajouter des données (inscription/connexion)-->
+    <!-- form action="" method=""-->
+    <!-- for : indique à quel élément le label est associé -->
+    <!-- id : donne l'identifiant de cet element -->
+    <!-- for et id travaillent ensemble pour relier le label à son champ -->
+
+        
+    <!-- Pied de page -->
+    <footer>
+        <p>Nous espérons que vous apprécierez votre expérience sur notre site et que vous trouverez les produits que vous recherchez. Merci de votre visite ! <br>
+           Voici nos liens face book et instagram : <br>
+        </p> 
+
+         <!-- liens vers : fb , instagram-->
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <!-- mailto : lien vers une adresse e-mail, il permet d'envoyer mail à cette adresse mail -->
+        <a href="mailto:myshop@gmail.com">myshop@gmail.com</a>
+        <!-- tel : Lien vers un numéro de téléphone , il permet de lancer un appel vers ce num -->
+        <a href="tel:123456789">123456789</a>
+        <!-- download : Télécharger automatiquement le pdf -->
+        <!-- download="document.pdf : Télécharger le fichier en lui donnant ce nom -->
+        <a href="assets/pdf/Mentions légales.pdf" download="document.pdf" >Mentions Légales</a>
+    </footer>
+
+</body>
+
+</html>
