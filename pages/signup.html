@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MySHop - Inscription</title>
+
+    <!-- Lien Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Lien vers le fichier CSS externe -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
     <header>
@@ -11,7 +16,7 @@
         <h1>Inscrivez vous</h1>
         <!-- Menu de navigation simple -->
         <nav>
-            <ul>
+            <ul class="menu">
                 <li>
                     <a href="../index.html">Acceuil</a>
                 </li>
@@ -43,7 +48,7 @@
         <!-- GET : récupération des données (rechercher/filtre) -->
         <!-- POST : Créer/Ajouter des données (inscription/connexion)-->
         <form action="" method="">
-            <h2>Inscription</h2>
+            <h2 class="presentation">Inscription</h2>
             <!-- Boite spéciale pour regrouper des chemps de formulaires liés -->
             <fieldset>
                 <!-- Titre de cette boite -->
@@ -115,17 +120,31 @@
     </main>
 
     <!-- Pied de page -->
-    <!-- Liens vers : fb , insta -->
     <footer>
-        <a href="https://www.decathlon.fr/" target="_blank">Facebook</a>
-        <a href="https://www.decathlon.fr/" target="_blank">Instagram</a>
+        <p>&copy; 2024 My Shop. Tous droits réservés.</p>
+        <!-- liens vers : fb , instagram-->
+        <a href="https://www.facebook.com/" target="_blank">
+            <i class="fa-brands fa-facebook"></i> Facebook
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>Instagram
+        </a>
+     
         <!-- mailto : lien vers une adresse e-mail, il permet d'envoyer mail à cette adresse mail -->
-        <a href="mailto:myshop@gmail.com">myshop@gmail.com</a>
+        <a href="mailto:myshop@gmail.com">
+            <i class="fa-solid fa-envelope"></i> myshop@gmail.com
+        </a>
+
         <!-- tel : Lien vers un numéro de téléphone , il permet de lancer un appel vers ce num -->
-        <a href="tel:123456789">123456789</a>
-        <!-- download : Télévharger automatiquement le pdf -->
+        <a href="tel:123456789">
+            <i class="fa-solid fa-phone"></i> 123456789
+        </a>
+
+        <!-- download : Télécharger automatiquement le pdf -->
         <!-- download="document.pdf : Télécharger le fichier en lui donnant ce nom -->
-        <a href="assets/pdf/Mentions légales.pdf" download="document.pdf">Mentions Légales</a>
+        <a href="assets/pdf/Mentions légales.pdf" download="document.pdf" >
+            <i class="fa-solid fa-file-pdf"></i> Mentions Légales
+        </a>
     </footer>
 
 </body>

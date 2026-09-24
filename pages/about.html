@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- Lien Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Lien vers le fichier CSS externe -->
+    <link rel="stylesheet" href="../assets/css/style.css"/>
 </head>
 <body>
     <header>
         <h1>A propos</h1>
         <p>Bienvenue sur about !</p>
         <!-- Menu de navigation -->
-        <nav>
-            <ul>
+        <nav >
+            <ul class="menu">
                 <li>
                     <a href="../index.html">Acceuil</a>
                 </li>
@@ -39,7 +44,7 @@
 <main>
     <section>
         <!-- Section principale -->
-        <h2>A propos de My shop</h2>
+        <h2 class="presentation">A propos de My shop</h2>
         <p>
             Nous sommes une boutique en ligne dédiée à la vente de produits de qualité à des prix compétitifs.
         </p>
@@ -58,17 +63,31 @@
 </main>
 
 <!-- Pied de page -->
-<!-- liens vers : fb , instagram-->
 <footer>
-    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-    <!-- mailto : lien vers une adresse e-mail, il permet d'envoyer mail à cette adresse mail -->
-    <a href="mailto:myshop@gmail.com">myshop@gmail.com</a>
-    <!-- tel : Lien vers un numéro de téléphone , il permet de lancer un appel vers ce num -->
-    <a href="tel:123456789">123456789</a>
-    <!-- download : Télévharger automatiquement le pdf -->
-    <!-- download="document.pdf : Télécharger le fichier en lui donnant ce nom -->
-    <a href="assets/pdf/Mentions légales.pdf" download="document.pdf" >Mentions Légales</a>
-</footer>
+        <p>&copy; 2024 My Shop. Tous droits réservés.</p>
+        <!-- liens vers : fb , instagram-->
+        <a href="https://www.facebook.com/" target="_blank">
+            <i class="fa-brands fa-facebook"></i> Facebook
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>Instagram
+        </a>
+     
+        <!-- mailto : lien vers une adresse e-mail, il permet d'envoyer mail à cette adresse mail -->
+        <a href="mailto:myshop@gmail.com">
+            <i class="fa-solid fa-envelope"></i> myshop@gmail.com
+        </a>
+
+        <!-- tel : Lien vers un numéro de téléphone , il permet de lancer un appel vers ce num -->
+        <a href="tel:123456789">
+            <i class="fa-solid fa-phone"></i> 123456789
+        </a>
+
+        <!-- download : Télécharger automatiquement le pdf -->
+        <!-- download="document.pdf : Télécharger le fichier en lui donnant ce nom -->
+        <a href="assets/pdf/Mentions légales.pdf" download="document.pdf" >
+            <i class="fa-solid fa-file-pdf"></i> Mentions Légales
+        </a>
+    </footer>
 
 </html>
