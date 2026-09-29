@@ -34,6 +34,7 @@ header {
 
 h2 {
     text-align: center;
+    padding-bottom: 20px;
 }
 
 body {
@@ -163,3 +164,62 @@ input[type="checkbox"] {
     display: block;
     margin: 0 auto;
 }
+
+/* product styling for TP2*/
+
+
+article {
+    max-width: 300px;
+    background-color: rgb(218, 216, 216);
+    padding: 20px;
+    border: solid rgb(218, 216, 216);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.product-name {
+    font-weight: bold;
+    padding: 10px 20px 15px 20px;
+    text-align: center;
+}
+
+.recommendation a{
+    font-weight: bold;
+    color: orange;
+}
+
+.recommendation {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.product-img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: 160px;
+    height: 200px;
+}
+
+.product-desc {
+    text-align: center;
+    padding: 10px;
+}
+
+.price {
+    font-weight: 800;
+    color: rgb(139, 3, 3);
+    text-align: center;
+    padding: 10px;
+}
+
+.buy {
+    background-color: rgb(3, 3, 160);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
