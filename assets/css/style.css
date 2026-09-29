@@ -175,7 +175,7 @@ article {
     border: solid rgb(218, 216, 216);
     border-radius: 10px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin: 3px;
 }
 .product-name {
     font-weight: bold;
@@ -223,3 +223,32 @@ article {
     margin: 0 auto;
 }
 
+/* quand la souris passe dessus */
+button:hover {
+    background-color: orange;
+    color: black;
+
+}
+
+/* quand l'utilisateur sélectionne un élément */
+input:focus {
+    border: 2px solid orange;
+    outline: none;
+}
+
+button:focus {
+    background-color:  goldenrod;
+}
+
+/* pendant le click */
+button:active {
+    /* background color: red */
+    font-size: 10px ;
+}
+
+/* Le conteneur flex */
+.products-container {
+    /* la propriété principale de flexbox*/
+    display:flex;
+    /* flex-direction: column; */
+}
