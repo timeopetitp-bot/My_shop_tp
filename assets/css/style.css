@@ -79,11 +79,6 @@ section {
     font-weight: bold;
 }
 
-img {
-    width: 160px;
-    height: 200px;
-}
-
 table img {
     width: 100px;
     height: 125px;
@@ -99,7 +94,7 @@ table img {
     - bottom 15px 
     - left 20px */
     border: 1px dashed black;
-    margin: 10px 10px 10px 10px;
+    margin: 10px;
 }
 
 .form {
@@ -172,10 +167,9 @@ article {
     max-width: 300px;
     background-color: rgb(218, 216, 216);
     padding: 20px;
-    border: solid rgb(218, 216, 216);
+    border: 1px solid rgb(218, 216, 216);
     border-radius: 10px;
-    margin: 0 auto;
-    margin: 3px;
+    margin: 0 auto
 }
 .product-name {
     font-weight: bold;
@@ -243,32 +237,38 @@ button:focus {
 /* pendant le click */
 button:active {
     /* background color: red */
-    font-size: 10px ;
+    transform: scale(0.95);
 }
 
 /* Le conteneur flex */
 .products-container {
     /* la propriété principale de flexbox*/
     display:flex;
+    flex-wrap:wrap;
+    gap: 10px;
     /* flex-direction: column; */
 }
 
-.categories h2 {
-    margin: 0 auto;
-    font-weight: 200;
-}
-
 .categories {
-    max-width: 1200px;
     text-align: center;
 }
 
-.categories category {
+.categories h2 {
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+
+.categories-list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 10px;
+}
+
+.category {
     width: 120px;
     border: 2px solid rgb(213, 212, 212);
     border-radius: 10px;
-    display: inline-block;
-    margin: 10px;
 }
 
 .categories img {
@@ -287,3 +287,15 @@ button:active {
     padding: 10px;
     text-align: center;
 }
+
+/* n'importe quel élément pdans product card
+.product-card p {
+}
+
+<p> nfant direct de l'élément html ayant class product card
+.product-card > p {
+}
+
+le + pour indiquer l'élément frère directeemnt suivant
+.product-card + p {
+} */
