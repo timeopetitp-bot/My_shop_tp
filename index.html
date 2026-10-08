@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceuil - My Shop</title>
+    <meta name="description" content="My Shop, votre boutique en ligne de vêtements et accessoires pour tout type de public">
+    <meta name="robots" content="index, follow">
+    <title>Acceuil - My Shop - Boutique de vêtements et d'accessoires en ligne</title>
 
     <!-- Lien Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Lien vers le fichier CSS externe -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
     <!-- Lien CSS de Bootstrap 5.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Internal method : CSS dans le fichier HTML
-    .presentation {
-        color: blue;
-        font-size: 25px;
-    }
-    #products {
-            color: red;
-            font-weight: 900;
-} -->
+    <!-- Lien vers le fichier CSS externe -->
+    <link rel="stylesheet" href="assets/css/style.css">
     
-        
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YQLHJM6D43"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-YQLHJM6D43');
+    </script>     
 </head>
 
 <body>
@@ -34,39 +34,106 @@
 
         <!-- Créer une liste non ordonnée -->
         <!-- Menu de navigation -->
-        <nav >
-            <ul class="menu">
-               <li>
-                   <a href="index.html" class="home link">Acceuil</a>
-               </li>
-               <li>
-                   <a href="pages/about.html">A propos</a>
-               </li>
-               <li>
-                   <a href="pages/products.html">Produits</a>
-               </li>
-               <li>
-                   <a href="pages/signup.html">Inscription</a>
-               </li>
-               <li>
-                   <a href="pages/login.html">Connexion</a>
-               </li>
-               <li>
-                   <a href="pages/cart.html">Panier</a>
-               </li>
-               <li>
-                   <a href="pages/contact.html">Contact</a>
-               </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a href="index.html">Acceuil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/about.html">A propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/products.html">Produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/signup.html">Inscription</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/login.html">Connexion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/cart.html">Panier</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!-- Contenu principal de la page -->
     <main>
         <!-- Présentation du site -->
+        <section class="banner">
+            <div class=""container">
+                <div class=""row>
+                    <div class="col-6">
+                        <h2>Bienvenue sur My Shop</h2>
+                        <p class="presentation">
+                            My SHop est <strong>une boutique de vente en ligne .</strong>
+                        </p>
+                        <p class="presentation">
+                            Vous pouvez découvrir nos produits et passer une commande
+                        </p>
+                        <a href="pages/products.html"> Voir nos services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+
+            <h2>Catégories</h2>
+
+            <div class="categories-list"> 
+
+                <div class="category">
+                        <img src="assets\images\femme category.jpg" alt="Catégorie Femmes">
+                        <h3>Femmes</h3>
+                </div>
+
+                <div class="category">
+                        <img src="assets\images\homme category.jpg" alt="Catégorie Hommes">
+                        <h3>Hommes</h3>
+                </div>
+
+                <div class="category">
+                        <img src="assets\images\enfant category.webp" alt="Catégorie Enfants">
+                        <h3>Enfants</h3>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Liste de définitions -->
+        <!-- <dl> -->
+        <!-- dt : Termes -->
+        <!-- <dt>HTML</dt> -->
+        <!-- dd : Définitions -->
+        <!-- <dd>Langage utilisé pour structurer une page web</dd> -->
+        <!-- <dt>CSS</dt> -->
+        <!-- <dd>Langage utilisé pour styliser une page web</dd> -->
+        <!-- </dl> -->
+
         <section>
-           <h2>Bienvenue sur My Shop</h2>
-           <!-- b = gras i = italique -->
+            <h2 id="products">Nos produits</h2>
+
+            <div id="carouselproducts" class="carousel slide">
+
+                <div class="carousel-inner">
+
+                    <!-- Produit 1 -->
+                     <div class="carousel-item active">
+                        <article>
+                            <h3>Gilet femme</h3>
            <!-- strong = gras em = italique en plus de donner de l'importance-->
            <p class="presentation">
                <b>My Shop</b> vous propose une <strong>large gamme de produits</strong> pour tous les goûts et <em>les budgets .</em>
@@ -83,17 +150,17 @@
             <div class="categories-list"> 
 
                 <div class="category">
-                        <img src="assets\images\femme category.jpg">
+                        <img src="assets\images\femme category.jpg" alt="Catégorie Femmes">
                         <h3>Femmes</h3>
                 </div>
 
                 <div class="category">
-                        <img src="assets\images\homme category.jpg">
+                        <img src="assets\images\homme category.jpg" alt="Catégorie Hommes">
                         <h3>Hommes</h3>
                 </div>
 
                 <div class="category">
-                        <img src="assets\images\enfant category.webp">
+                        <img src="assets\images\enfant category.webp" alt="Catégorie Enfants">
                         <h3>Enfants</h3>
                 </div>
 

@@ -20,7 +20,7 @@
 /* pour les a qui sont enfants de header */
 header a , footer a {
     text-decoration: none;
-    color: rgb(51, 0, 255);
+    color: rgb(36, 2, 169);
 }
 
 header , footer{
@@ -65,13 +65,30 @@ section {
     border-radius: 10px;
 }
 
-.presentation {
-    color: blue;
-    font-size: 25px;
+/*banner*/
+.banner {
+    height: 600px;
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner h2 {
+    text-align: left;
+    color: orange;
+}
+
+.banner a {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 #products {
-     color: red;
+     color: rgb(136, 2, 2);
     font-weight: 900;
 }
 
@@ -82,7 +99,7 @@ section {
 }
 
 .home.link {
-    color: #007bff;
+    color: #014084;
     font-weight: bold;
 }
 
@@ -186,7 +203,7 @@ article {
 
 .recommendation a{
     font-weight: bold;
-    color: orange;
+    color: rgb(131, 1, 1);
 }
 
 .recommendation {
@@ -329,7 +346,7 @@ article {
     z-index: 100;
     top: 0px;
     left: 0px;
-    background-color: red;
+    background-color: rgb(151, 1, 1);
     color: white;
     border-radius: 5px;
     font-weight: bold;
