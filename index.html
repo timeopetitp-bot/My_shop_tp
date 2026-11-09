@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My Shop, votre boutique en ligne de vêtements et accessoires pour tout type de public">
+    <meta name="description"
+        content="My Shop, votre boutique en ligne de vêtements et accessoires pour tout type de public">
     <meta name="robots" content="index, follow">
-    <title>Acceuil - My Shop - Boutique de vêtements et d'accessoires en ligne</title>
+    <title>Accueil - My Shop - Boutique de vêtements et d'accessoires en ligne</title>
 
     <!-- Lien Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -13,22 +15,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Lien vers le fichier CSS externe -->
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YQLHJM6D43"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-YQLHJM6D43');
-    </script>    
+    </script>
 </head>
 
 <body>
     <!-- En-tête de la page -->
     <header>
-    
+
         <!-- Titre principal -->
         <h1 class="Title">My Shop</h1>
 
@@ -43,25 +45,25 @@
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
                         <li class="nav-item">
-                            <a href="index.html">Acceuil</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/about.html">A propos</a>
+                            <a class="nav-link" href="pages/about.html">À propos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/products.html">Produits</a>
+                            <a class="nav-link" href="pages/products.html">Produits</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/signup.html">Inscription</a>
+                            <a class="nav-link" href="pages/signup.html">Inscription</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/login.html">Connexion</a>
+                            <a class="nav-link" href="pages/login.html">Connexion</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/cart.html">Panier</a>
+                            <a class="nav-link" href="pages/cart.html">Panier</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/contact.html">Contact</a>
+                            <a class="nav-link" href="pages/contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -73,44 +75,30 @@
     <main>
         <!-- Présentation du site -->
         <section class="banner">
-            <div class=""container">
-                <div class=""row>
-                    <div class="col-6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
                         <h2>Bienvenue sur My Shop</h2>
                         <p class="presentation">
-                            My SHop est <strong>une boutique de vente en ligne .</strong>
+                            My Shop est <strong>une boutique de vente en ligne.</strong>
                         </p>
                         <p class="presentation">
                             Vous pouvez découvrir nos produits et passer une commande
                         </p>
-                        <a href="pages/products.html"> Voir nos services</a>
+                        <a href="pages/products.html"> Voir nos produits</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="categories">
-
-            <h2>Catégories</h2>
-
-            <div class="categories-list"> 
-
-                <div class="category">
-                        <img src="assets\images\femme category.jpg" alt="Catégorie Femmes">
-                        <h3>Femmes</h3>
-                </div>
-
-                <div class="category">
-                        <img src="assets\images\homme category.jpg" alt="Catégorie Hommes">
-                        <h3>Hommes</h3>
-                </div>
-
-                <div class="category">
-                        <img src="assets\images\enfant category.webp" alt="Catégorie Enfants">
-                        <h3>Enfants</h3>
-                </div>
-
-            </div>
+        <section class="intro">
+            <p class="presentation">
+                <b>My Shop</b> vous propose une <strong>large gamme de produits</strong> pour tous les goûts et <em>les
+                    budgets</em>.
+            </p>
+            <p>
+                <i>Découvrez</i> nos <span class="highlight">collections</span> et profitez de nos offres exclusives !
+            </p>
         </section>
 
         <!-- Liste de définitions -->
@@ -123,56 +111,36 @@
         <!-- <dd>Langage utilisé pour styliser une page web</dd> -->
         <!-- </dl> -->
 
-        <section>
-            <h2 id="products">Nos produits</h2>
-
-            <div id="carouselproducts" class="carousel slide">
-
-                <div class="carousel-inner">
-
-                    <!-- Produit 1 -->
-                     <div class="carousel-item active">
-                        <article>
-                            <h3>Gilet femme</h3>
-           <!-- strong = gras em = italique en plus de donner de l'importance-->
-           <p class="presentation">
-               <b>My Shop</b> vous propose une <strong>large gamme de produits</strong> pour tous les goûts et <em>les budgets .</em>
-           </p>
-           <p>
-               <i>Découvrez</i> nos <span style="color: blueviolet;">collections</span> et profitez de nos offres exclusives !
-           </p>
-        </section>
-
         <section class="categories">
 
             <h2>Catégories</h2>
 
-            <div class="categories-list"> 
+            <div class="categories-list">
 
                 <div class="category">
-                        <img src="assets\images\femme category.jpg" alt="Catégorie Femmes">
-                        <h3>Femmes</h3>
+                    <img src="assets/images/femme-category.jpg" alt="Catégorie Femmes">
+                    <h3>Femmes</h3>
                 </div>
 
                 <div class="category">
-                        <img src="assets\images\homme category.jpg" alt="Catégorie Hommes">
-                        <h3>Hommes</h3>
+                    <img src="assets\images\homme-category.jpg" alt="Catégorie Hommes">
+                    <h3>Hommes</h3>
                 </div>
 
                 <div class="category">
-                        <img src="assets\images\enfant category.webp" alt="Catégorie Enfants">
-                        <h3>Enfants</h3>
+                    <img src="assets\images\enfant-category.webp" alt="Catégorie Enfants">
+                    <h3>Enfants</h3>
                 </div>
 
-            </div> 
-           
-           <!--Liste ordonnée -->
-           <!-- <ol>
+            </div>
+
+            <!--Liste ordonnée -->
+            <!-- <ol>
                <li>Femmes</li>
                <li>Hommes</li>
                <li>Enfants</li>
            </ol> -->
-                
+
         </section>
 
         <!-- Liste de définitions -->
@@ -193,14 +161,14 @@
                 <div class="carousel-inner">
 
                     <!-- Produit 1 -->
-                     <div class="carousel-item active">
+                    <div class="carousel-item active">
                         <article>
                             <h3>Gilet femme</h3>
                             <div class="badge-new">New</div>
                             <div class="badge-fav">
                                 <i class="fa-solid fa-star"></i>
                             </div>
-                            <img src="assets/images/gilet femme.webp" alt="Gilet femme" width="200">
+                            <img src="assets/images/gilet-femme.webp" alt="Gilet femme" width="200">
                             <p>Beau gilet vert pour femme</p>
                             <p>Prix : 29,99 €</p>
                             <button class="add-to-cart" type="button">Ajouter au panier</button>
@@ -211,7 +179,7 @@
                     <div class="carousel-item">
                         <article>
                             <h3>Veste homme</h3>
-                            <img src="assets/images/veste homme.webp" alt="Veste homme" width="200">
+                            <img src="assets/images/veste-homme.webp" alt="Veste homme" width="200">
                             <p>Belle veste en cuir pour homme</p>
                             <p>Prix : 59,99 €</p>
                             <button class="add-to-cart" type="button">Ajouter au panier</button>
@@ -222,7 +190,7 @@
                     <div class="carousel-item">
                         <article>
                             <h3>Pull enfant</h3>
-                            <img src="assets/images/pull enfant.jfif" alt="Pull enfant" width="200">
+                            <img src="assets/images/pull-enfant.jfif" alt="Pull enfant" width="200">
                             <p>Beau pull rouge pour enfant</p>
                             <p>Prix : 19,99 €</p>
                             <button class="add-to-cart" type="button">Ajouter au panier</button>
@@ -231,25 +199,19 @@
                 </div>
                 <!-- Contrôles du carrousel -->
                 <!-- Bouton précédent -->
-                <button class="carousel-control-prev"
-                        type="button"
-                        data-bs-target="#carouselproducts"
-                        data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselproducts"
+                    data-bs-slide="prev">
 
-                    <span class="carousel-control-prev-icon"
-                        aria-hidden="true"></span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 
                     <span class="visually-hidden">Previous</span>
                 </button>
 
                 <!-- Bouton suivant -->
-                <button class="carousel-control-next"
-                        type="button"
-                        data-bs-target="#carouselproducts"
-                        data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselproducts"
+                    data-bs-slide="next">
 
-                    <span class="carousel-control-next-icon"
-                        aria-hidden="true"></span>
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -266,21 +228,21 @@
             </p>
         </aside>
     </main>
-   
-     <!-- Pied de page -->
-     <p>Nous espérons que vous apprécierez votre expérience sur notre site et que vous trouverez les produits que vous recherchez. Merci de votre visite ! <br>
-     Voici nos liens face book et instagram : <br>
-     </p> 
-     <footer>
-        <p>&copy; 2024 My Shop. Tous droits réservés.</p>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>Nous espérons que vous apprécierez votre expérience sur notre site et que vous trouverez les produits que vous
+        recherchez. Merci de votre visite ! <br>
+        Voici nos liens Facebook et instagram :</p>
+        <p>&copy; 2026 My Shop. Tous droits réservés.</p>
         <!-- liens vers : fb , instagram-->
-        <a href="https://www.facebook.com/" target="_blank">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
             <i class="fa-brands fa-facebook"></i> Facebook
         </a>
-        <a href="https://www.instagram.com/" target="_blank">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
             <i class="fa-brands fa-instagram"></i>Instagram
         </a>
-     
+
         <!-- mailto : lien vers une adresse e-mail, il permet d'envoyer mail à cette adresse mail -->
         <a href="mailto:myshop@gmail.com">
             <i class="fa-solid fa-envelope"></i> myshop@gmail.com
@@ -293,13 +255,15 @@
 
         <!-- download : Télécharger automatiquement le pdf -->
         <!-- download="document.pdf : Télécharger le fichier en lui donnant ce nom -->
-        <a href="assets/pdf/Mentions légales.pdf" download="document.pdf" >
+        <a href="assets/pdf/Mentions-legales.pdf" download="Mentions-legales.pdf">
             <i class="fa-solid fa-file-pdf"></i> Mentions Légales
         </a>
     </footer>
 
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    <button class="scroll-top" type="button" aria-label="Retour en haut de la page">
+    <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
     </script>
     <script src="assets/js/script.js"></script>
 </body>

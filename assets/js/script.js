@@ -373,45 +373,154 @@
 
 //Tp5
 //https://code.mu/fr/javascript/manual/array/filter/
-var nametab = new Array(0);
-console.log(nametab);
+// const nametab = [];
+// console.log(nametab);
 
-function addName(name) {
-    nametab.push(name);
-}
-addName("Islem");
-addName("Skander");
-addName("Marion");
-addName("Randy");
-addName("Timéo");
+// function addName(name) {
+//     nametab.push(name);
+// }
+// addName("Islem");
+// addName("Skander");
+// addName("Marion");
+// addName("Randy");
+// addName("Timéo");
 
-for (let i =0; i < nametab.length; i++) {
-    console.log(nametab[i]);
-}
+// for (let i =0; i < nametab.length; i++) {
+//     console.log(nametab[i]);
+// }
 
-function FindUser(name) {
-    for (let u = 0; u < nametab.length; u++) {
-        if (nametab[u] === name) {
-            console.log("Utilisateur trouvé");
-            return; 
-        }
-    }
-    console.log("Utilisateur non trouvé");
-    return;
+// function FindUser(name) {
+//     for (let u = 0; u < nametab.length; u++) {
+//         if (nametab[u] === name) {
+//             console.log("Utilisateur trouvé");
+//             return; 
+//         }
+//     }
+//     console.log("Utilisateur non trouvé");
+//     return;
     
-}
+// }
 
-FindUser("Islem");
-FindUser("Lucas");
+// FindUser("Islem");
+// FindUser("Lucas");
 
-for (let o = 0; o < nametab.length; o++) {
-    if (nametab[o].includes("a")) {
-        console.log(nametab[o]);
-    }
-}
+// for (let o = 0; o < nametab.length; o++) {
+//     if (nametab[o].toLowerCase().includes("a")) {
+//         console.log(nametab[o]);
+//     }
+// }
 
-if (nametab.length > 0) {
-    console.log("Nombre d'utilisateurs : ", nametab.length);
-} else {
-    console.log("Aucun utilisateur");
-}
+// if (nametab.length > 0) {
+//     console.log("Nombre d'utilisateurs : ", nametab.length);
+// } else {
+//     console.log("Aucun utilisateur");
+// }
+
+// Manipulation du DOM
+// const titreSectrionProduit = document.getElementById('products');
+// console.log(titreSectrionProduit);
+// const titreH2 = document.querySelector('#products');
+// console.log(titreH2);
+
+
+// const productCards = document.getElementsByClassName('product-card');
+// console.log(productCards);
+// console.log("1er Article : ", productCards[0]);
+
+// const articles = document.getElementsByTagName('article');
+// console.log("Exemple avec Tag name : " ,articles);
+
+// const articlesSelector = document.querySelector('article');
+// console.log("Exemple avec Query Selector : ", articlesSelector);
+
+// const allArticles = document.querySelectorAll('article')
+// console.log("Exemple avec Query Selector All : ", allArticles);
+
+
+//Modifier text à partir du fichier js 
+// const titreSectrionProduit = document.getElementById('products');
+// titreSectrionProduit.textContent = "La liste de nos produits";
+
+// const testH2 = document.getElementsByClassName('testH2');
+// // Retourner une collection HTMl qui contient  un élement
+// console.log(testH2);
+// testH2[0].textContent ="<strong>aaaa</strong>"; //Afficher la balise strong comme un text
+
+// const descriptionP1 = document.getElementById('descriptionP1');
+// // Injecter du HTML à partir du JS
+// descriptionP1.innerHTML = "<strong>Veste Femme Marron</strong>";
+// // Changer le style css d'un text
+// descriptionP1.style.color = "red";
+// descriptionP1.style.fontSize = "20px"
+
+// // TP6 ex2
+// const titres = document.getElementsByClassName('titreH3');
+// const titres2 = document.querySelectorAll('.titreH3');
+// const titres3 = document.querySelectorAll('.product-card h3');
+// console.log(titres);
+// console.log(titres2);
+// console.log(titres3);
+// titres[0].style.color = "red";
+// titres[1].style.color = "red";
+// titres[3].style.color = "red";
+
+// Parcourir HTML COLLECTION
+// for (let i = 0; i < titres.length; i++) {
+    // titres[i].style.color = "red";
+// }
+
+// Parcourir NodeList/Tableau
+// titres3.forEach((titre) => {
+//     titre.style.color = "green";
+//     // titre.textContent = titre.textContent.toUpperCase();
+//     titre.style.textTransform = "uppercase";
+// });
+
+// TP6 EX3
+// const btns = document.querySelectorAll('button');
+
+// btns.forEach((btn) => {
+//     btn.textContent = "Ajouter au panier";
+//     btn.style.backgroundColor ="green";
+// })
+
+// // TP6 EX4
+// const btnScroll = document.querySelector(".scroll-top");
+// console.log(btnScroll);
+
+// // Ajouter un évenement clic
+// // btnScroll.addEventListener("click", function() {
+//     // btnScroll.style.backgroundColor = "grey";
+//     // btnScroll.textContent = "cliqué!";
+// //     alert("Cliqué!");
+// // });
+
+// function afficherAlert() {
+//     alert("Here from fucntion afficherAlert!");
+// }
+
+//Tp6 EX5
+//récupérer les produits 
+
+// let prixproduit = document.querySelectorAll('.prix');
+
+// // Parcourir les prix
+// prixproduit.forEach((prix) => {
+//     // Récupérer le texte du prix
+//     let texteprix = prix.innerText;
+//     console.log(texteprix);  
+
+//     // Récupérer le prix uniquement en nombre
+//     //let montant = Number(texteprix.replace("prix : ", "").replace("€", "").trim());   // Supprimer le texte "prix : " et le symbole "€"
+//     let montant = Number(texteprix.replace(/[^\d.]/g,"")); // Supprimer les caractères non numériques
+//     console.log(montant);
+
+//     // Vérifier si le prix est supérieur à 25
+//    if (montant < 25) {
+//         prix.style.color ="green"
+//     } else if (montant <= 50) {
+//         prix.style.color = "orange"
+//     } else {
+//         prix.style.color ="red"
+//     }
+// })
