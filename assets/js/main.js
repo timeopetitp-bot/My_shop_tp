@@ -95,26 +95,26 @@ function afficherProduits() {
 
 }
 
-afficherProduits();
+// afficherProduits();
 
-function ajouterProduit() {
-    const form = document.getElementById('formProduct');
+// function ajouterProduit() {
+//     const form = document.getElementById('formProduct');
 
-    if (form) {
+//     if (form) {
 
-        form.addEventListener("submit", function (event) {
-            event.preventDefault(); //Annuler le rechargement automatique de la page
+//         form.addEventListener("submit", function (event) {
+//             event.preventDefault(); //Annuler le rechargement automatique de la page
 
-            // Récupérer les valeurs du formulair
-            let nom = document.getElementById('nom').value;
-            let prix = document.getElementById('prix').value;
-            let description = document.getElementById('description').value;
-            let imgURL = document.getElementById('imgURL').value
-            console.log(nom, prix, description, imgURL);
+//             // Récupérer les valeurs du formulair
+//             let nom = document.getElementById('nom').value;
+//             let prix = document.getElementById('prix').value;
+//             let description = document.getElementById('description').value;
+//             let imgURL = document.getElementById('imgURL').value
+//             console.log(nom, prix, description, imgURL);
 
 
-            // alert("Produit ajouté !")
-        })
-    }
-}
-ajouterProduit();
+//             // alert("Produit ajouté !")
+//         })
+//     }
+// }
+// ajouterProduit();
