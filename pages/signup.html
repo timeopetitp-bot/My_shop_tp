@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Créer un compte et découvrez notre site">
     <meta name="robots" content="noindex, follow">
-    <title>MySHop - Inscription</title>
+    <title>My Shop - Inscription</title>
 
     <!-- Lien Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -29,7 +29,7 @@
         <nav>
             <ul class="menu">
                 <li>
-                    <a href="../index.html">Acceuil</a>
+                    <a href="../index.html">Accueil</a>
                 </li>
                 <li>
                     <a href="about.html">A propos</a>
@@ -44,7 +44,7 @@
                     <a href="login.html">Connexion</a>
                 </li>
                 <li>
-                    <a href="cart.html">Panier<a>
+                    <a href="cart.html">Panier</a>
                 </li>
                 <li>
                     <a href="contact.html">Contact</a>
@@ -58,7 +58,7 @@
         <!-- method : comment envoyer les données (GET/POST) -->
         <!-- GET : récupération des données (rechercher/filtre) -->
         <!-- POST : Créer/Ajouter des données (inscription/connexion)-->
-        <form class="form">
+        <form class="form" method="post" action="#">
             <h2 class="presentation">Inscription</h2>
             <!-- Boite spéciale pour regrouper des chemps de formulaires liés -->
             <fieldset class="fieldset">
@@ -70,17 +70,17 @@
                     <!-- id : donne l'identifiant de cet element -->
                     <!-- for et id travaillent ensemble pour relier le label à son champ -->
                     <label for="nom">Nom :</label>
-                    <input type="text" id="nom" placeholder="Votre Nom" required> 
+                    <input type="text" id="nom" name="nom" placeholder="Votre Nom" required> 
                 </div>
 
                 <div>
                     <label for="email">Email :</label>
-                    <input type="email" id="email" placeholder="exemple@gmail.com" required>
+                    <input type="email" id="email" name="email" placeholder="exemple@gmail.com" required>
                 </div>      
 
                 <div>
                    <label for="pwd">Mot de passe :</label>
-                   <input type="password" id="pwd" placeholder="Votre mot de passe" required> 
+                   <input type="password" id="pwd" name="pwd" placeholder="Votre mot de passe" required> 
                 </div>
             </fieldset>
 
@@ -90,7 +90,7 @@
 
                 <!-- Radio -->
                 <div>
-                    <label>Genre :</label>
+                    <label> Genre :</label>
                     <input type="radio" id="femme" name="genre" value="femme">
                     <label for="femme">Femme</label>
 
@@ -104,7 +104,7 @@
 
                 <!-- checkbox -->
                 <div>
-                    <label> Intérets : </label>
+                    <label> Intérêts :</label>
                     <input type="checkbox" name="interets" id="vetements" value="vetements" >
                     <label for="vetements"> Vetements </label>
 
@@ -114,8 +114,9 @@
 
                 <!-- Liste déroulante  -->
                 <div>
-                    <label for="pays">Pays :</label>
+                    <label for="pays"> Pays :</label>
                     <select name="pays" id="pays">
+                        <option value="">Choisir un pays</option>
                         <option value="france">France</option>
                         <option value="tunisie">Tunisie</option>
                     </select>
@@ -127,7 +128,7 @@
 
     <!-- Pied de page -->
     <footer>
-        <p>&copy; 2024 My Shop. Tous droits réservés.</p>
+        <p>&copy; 2026 My Shop. Tous droits réservés.</p>
         <!-- liens vers : fb , instagram-->
         <a href="https://www.facebook.com/" target="_blank">
             <i class="fa-brands fa-facebook"></i> Facebook
@@ -148,7 +149,7 @@
 
         <!-- download : Télécharger automatiquement le pdf -->
         <!-- download="document.pdf : Télécharger le fichier en lui donnant ce nom -->
-        <a href="assets/pdf/Mentions légales.pdf" download="document.pdf" >
+        <a href="../assets/pdf/Mentions-legales.pdf" download="Mentions-legales.pdf" >
             <i class="fa-solid fa-file-pdf"></i> Mentions Légales
         </a>
     </footer>

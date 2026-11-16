@@ -1,5 +1,5 @@
 const btnScroll = document.querySelector('.scroll-top');
-console.log(btnScroll);
+// console.log(btnScroll);
 if (btnScroll) {
     btnScroll.addEventListener("click", function () {
         window.scrollTo({
@@ -7,11 +7,17 @@ if (btnScroll) {
             behavior: "smooth"
         })
     })
-};
+}
 
 function afficherProduits() {
     const container = document.querySelector(".products-container");
-    console.log(container);
+    if (!container) return; // Si le conteneur n'existe pas, on quitte la fonction
+
+    // AJOUT : préfixe du chemin selon la page
+    const prefixe = window.location.pathname.includes("/pages/") ? "../" : "";
+
+
+    // console.log(container);
 
     // Afficher un seul produit
     // let productName = "chemise";
@@ -36,27 +42,27 @@ function afficherProduits() {
     //     </article>
     // `
 
-    let produits = [
+    const produits = [
         {
-            nom: "Veste Femme",
+            nom: "Gilet Femme",
             description: "description produit1",
             prix: 20,
-            imgURL: "assets/images/veste-femme.webp"
+            imgURL: "assets/images/gilet-femme.webp"
         },
         {
-            nom: "Chemise Homme",
+            nom: "Veste Homme",
             description: "description produit2",
             prix: 30,
-            imgURL: "assets/images/chemise-homme.webp"
+            imgURL: "assets/images/veste-homme.webp"
         },
         {
-            nom: "Jean Homme",
+            nom: "Jean Femme",
             description: "description produit3",
             prix: 15,
-            imgURL: "assets/images/jean-homme.jfif"
+            imgURL: "assets/images/jean-femme.jfif"
         }
     ];
-    console.log(produits);
+    // console.log(produits);
     // Injecter le contenu avec innerHTML 
     // container.innerHTML = "";
     // produits.forEach((produit)=>{
@@ -73,29 +79,26 @@ function afficherProduits() {
     // });
 
 
-    if (container) {
-        // Création de l'élement article
-        produits.forEach((produit) => {
-            const article = document.createElement("article"); //<article></article>
-            // Ajouter class ="product-card" dans l'élement article
-            article.classList.add("product-card"); //<article class="product-card"></article>
 
-            article.innerHTML = `
-        <h3 class ="titreH3">${produit.nom}</h3>
-        <img src=${produit.imgURL} alt=${produit.nom}>
-        <p>${produit.description}</p>
-        <p class="prix">Prix : ${produit.prix} £</p>
-        <button type="button">Acheter</button>
+    // Création de l'élement article
+    produits.forEach((produit) => {
+        const article = document.createElement("article"); //<article></article>
+        // Ajouter class ="product-card" dans l'élement article
+        article.classList.add("product-card"); //<article class="product-card"></article>
+
+        article.innerHTML = `
+            <h3 class="product-name">${produit.nom}</h3>
+            <img class="product-img" src="${prefixe}${produit.imgURL}" alt="${produit.nom}" width="200">
+            <p class="product-desc">${produit.description}</p>
+            <p class="price">Prix : ${produit.prix} €</p>
+            <button class="buy" type="button">Acheter</button>
         `;
 
-            container.appendChild(article);
-        })
-    }
-
-
+        container.appendChild(article);
+    })
 }
 
-// afficherProduits();
+afficherProduits();
 
 // function ajouterProduit() {
 //     const form = document.getElementById('formProduct');

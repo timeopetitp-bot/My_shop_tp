@@ -31,7 +31,7 @@
         <nav>
             <ul class="menu">
                 <li>
-                    <a href="../index.html">Acceuil</a>
+                    <a href="../index.html">Accueil</a>
                 </li>
                 <li>
                     <a href="about.html">A propos</a>
@@ -46,7 +46,7 @@
                     <a href="login.html">Connexion</a>
                 </li>
                 <li>
-                    <a href="cart.html">Panier<a>
+                    <a href="cart.html">Panier</a>
                 </li>
                 <li>
                     <a href="contact.html">Contact</a>
@@ -64,7 +64,7 @@
                 <article>
                     <h3 class="product-name">Gilet femme</h3>
                     <p class="recommendation">Ce produit est <a>très recommandé</a> par nos clients</p>
-                    <img class="product-img" src="../assets/images/gilet femme.webp" alt="Gilet femme" width="200">
+                    <img class="product-img" src="../assets/images/gilet-femme.webp" alt="Gilet femme" width="200">
                     <p class="product-desc">Beau gilet vert pour femme</p>
                     <p class="price">Prix : 29,99 €</p>
                     <button class="buy" type="button">Acheter</button>
@@ -74,7 +74,7 @@
                 <article>
                     <h3 class="product-name">Veste homme</h3>
                     <p class="recommendation">Ce produit est <a>très recommandé</a> par nos clients</p>
-                    <img class="product-img" src="../assets/images/veste homme.webp" alt="Veste homme" width="200">
+                    <img class="product-img" src="../assets/images/veste-homme.webp" alt="Veste homme" width="200">
                     <p class="product-desc">Belle veste en cuir pour homme</p>
                     <p class="price">Prix : 59,99 €</p>
                     <button class="buy" type="button">Acheter</button>
@@ -84,7 +84,7 @@
                 <article>
                     <h3 class="product-name">Pull enfant</h3>
                     <p class="recommendation">Ce produit est <a>très recommandé</a> par nos clients</p>
-                    <img class="product-img" src="../assets/images/pull enfant.jfif" alt="Pull enfant" width="200">
+                    <img class="product-img" src="../assets/images/pull-enfant.jfif" alt="Pull enfant" width="200">
                     <p class="product-desc">Beau pull rouge pour enfant</p>
                     <p class="price">Prix : 19,99 €</p>
                     <button class="buy" type="button">Acheter</button>
@@ -95,18 +95,18 @@
 
         <section>
             <!-- Liste des produits dans un tableau-->
-            <table border="1">
+            <table>
                 <!-- Lignes du tableau -->
                 <!-- En-tête du tableau -->
                 <thead>
                     <tr>
                         <!-- Cellules de l'en tête du tableau -->
-                        <td>Catégorie</td>
-                        <td>Produit</td>
-                        <td>Image</td>
-                        <td>Description</td>
-                        <td>Prix</td>
-                        <td>Action</td>
+                        <th scope="col">Catégorie</th>
+                        <th scope="col">Produit</th>
+                        <th scope="col">Image</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Prix</th>
+                        <th scope="col">Action</th>
                     </tr>
                 </thead>
                 <!-- Corps du tableau -->
@@ -115,7 +115,7 @@
                         <!-- td : Cellules du tableau -->
                         <td rowspan="2">Femme</td>
                         <td>Gilet</td>
-                        <td><img src="../assets/images/gilet femme.webp" alt="Gilet femme" width="100"></td>
+                        <td><img src="../assets/images/gilet-femme.webp" alt="Gilet femme" width="100"></td>
                         <td>Beau gilet vert pour femme</td>
                         <td>29,99 €</td>
                         <td><button type="button">Acheter</button></td>
@@ -123,7 +123,7 @@
 
                     <tr>
                         <td>Jean</td>
-                        <td><img src="../assets/images/jean femme.jfif" alt="Jean femme" width="100"></td>
+                        <td><img src="../assets/images/jean-femme.jfif" alt="Jean femme" width="100"></td>
                         <td>Beau jean pour femme</td>
                         <td>9,99 €</td>
                         <td><button type="button">Acheter</button></td>
@@ -132,7 +132,7 @@
                     <tr>
                         <td>Homme</td>
                         <td>Veste</td>
-                        <td><img src="../assets/images/veste homme.webp" alt="Veste homme" width="100"></td>
+                        <td><img src="../assets/images/veste-homme.webp" alt="Veste homme" width="100"></td>
                         <td>Belle veste en cuir pour homme</td>
                         <td>59,99 €</td>
                         <td><button type="button">Acheter</button></td>
@@ -141,7 +141,7 @@
                     <tr>
                         <td>Enfant</td>
                         <td>Pull</td>
-                        <td><img src="../assets/images/pull enfant.jfif" alt="Pull enfant" width="100"></td>
+                        <td><img src="../assets/images/pull-enfant.jfif" alt="Pull enfant" width="100"></td>
                         <td>Beau pull rouge pour enfant</td>
                         <td>19,99 €</td>
                         <td><button type="button">Acheter</button></td>
@@ -159,7 +159,7 @@
 
     <!-- Pied de page -->
     <footer>
-        <p>&copy; 2024 My Shop. Tous droits réservés.</p>
+        <p>&copy; 2026 My Shop. Tous droits réservés.</p>
         <!-- liens vers : fb , instagram-->
         <a href="https://www.facebook.com/" target="_blank">
             <i class="fa-brands fa-facebook"></i> Facebook
@@ -180,12 +180,12 @@
 
         <!-- download : Télécharger automatiquement le pdf -->
         <!-- download="document.pdf : Télécharger le fichier en lui donnant ce nom -->
-        <a href="assets/pdf/Mentions-légales.pdf" download="document.pdf" >
+        <a href="../assets/pdf/Mentions-legales.pdf" download="Mentions-legales.pdf" >
             <i class="fa-solid fa-file-pdf"></i> Mentions Légales
         </a>
     </footer>
     
-    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/main.js"></script>
 
 </body>
 </html>

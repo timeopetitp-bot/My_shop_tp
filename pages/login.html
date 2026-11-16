@@ -26,12 +26,12 @@
 
     <header>
         <!-- Titre Principal -->
-        <h1 class="presentation">Connexion</h1>
+        <h1>Connexion</h1>
         <!-- Menu de navigation simple -->
         <nav >
             <ul class="menu">
                 <li>
-                    <a href="../index.html">Acceuil</a>
+                    <a href="../index.html">Accueil</a>
                 </li>
                 <li>
                     <a href="about.html">A propos</a>
@@ -46,7 +46,7 @@
                     <a href="login.html">Connexion</a>
                 </li>
                 <li>
-                    <a href="cart.html">Panier<a>
+                    <a href="cart.html">Panier</a>
                 </li>
                 <li>
                     <a href="contact.html">Contact</a>
@@ -57,19 +57,19 @@
 
     <main>
 
-        <form>
+        <form class="form">
             <h2>Connexion</h2>
             <div>  
                 <label for="email">Email :</label>
-                <input type="email" id="email" placeholder="exemple@gmail.com" required> <br>
+                <input type="email" name="email" id="email" placeholder="exemple@gmail.com" required>
             </div>
 
             <div>
                 <label for="pwd">Mot de passe :</label>
-                <input type="password" id="pwd" placeholder="Votre mot de passe" required> <br>
+                <input type="password" name="pwd" id="pwd" placeholder="Votre mot de passe" required> 
             </div>
    
-            <button type="connect">Se connecter</button> <br>
+            <button type="submit">Se connecter</button> 
 
             <div>
                 <a href="signup.html">Vous n'avez pas de compte ? Inscrivez-vous ici.</a>
@@ -79,7 +79,7 @@
 
     <!-- Pied de page -->
     <footer>
-        <p>&copy; 2024 My Shop. Tous droits réservés.</p>
+        <p>&copy; 2026 My Shop. Tous droits réservés.</p>
         <!-- liens vers : fb , instagram-->
         <a href="https://www.facebook.com/" target="_blank">
             <i class="fa-brands fa-facebook"></i> Facebook
@@ -100,7 +100,7 @@
 
         <!-- download : Télécharger automatiquement le pdf -->
         <!-- download="document.pdf : Télécharger le fichier en lui donnant ce nom -->
-        <a href="assets/pdf/Mentions légales.pdf" download="document.pdf" >
+        <a href="../assets/pdf/Mentions-legales.pdf" download="Mentions-legales.pdf" >
             <i class="fa-solid fa-file-pdf"></i> Mentions Légales
         </a>
     </footer>
