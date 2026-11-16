@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ajout Produit</title>
     <!-- Lien FontAwsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
     <!-- Lien vers Fichier CSS -->
@@ -22,9 +22,10 @@
 <body>
     <header>
         <!-- Titre Principal -->
-        <h1>My Shop</h1>
+        <h1>Ajout Produit</h1>
         <!-- Menu de navigation simple -->
-        <ul>
+        <nav>
+            <ul class="menu">
                 <li>
                     <a href="../index.html">Accueil</a>
                 </li>
@@ -38,7 +39,7 @@
                     <a href="signup.html">Inscription</a>
                 </li>
                 <li>
-                    <a href="signin.html">Connexion</a>
+                    <a href="login.html">Connexion</a>
                 </li>
                 <li>
                     <a href="cart.html">Panier</a>
@@ -47,8 +48,8 @@
                     <a href="contact.html">Contact</a>
                 </li>
             </ul>
+        </nav>
     </header>
-
 
     <main>
             <form id="formProduct" class="form">
@@ -61,11 +62,11 @@
             
                 <div>
                     <label for="prix">Prix :</label>
-                    <input type="number" id="prix"  required>
+                    <input type="number" id="prix" min="0" step="0.01" required>
                 </div>
                 <div>
-                    <label for="descirption">descirption :</label>
-                    <textarea rows="2" id="descirption" placeholder="Votre message" required></textarea>
+                    <label for="description">Description :</label>
+                    <textarea rows="2" id="description" placeholder="Description de votre produit" required></textarea>
                 </div>
                 <div>
                     <label for="imgURL">ImgURL :</label>
@@ -79,8 +80,8 @@
     <!-- Pied de page -->
     <footer>
          <h2>Contactez-Nous : </h2>
-        <a href="https://www.decathlon.fr/" target="_blank">Facebook</a>
-        <a href="https://www.decathlon.fr/" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
         <!-- mailto : lien vers une adresse e-mail, il permet d'envoyer mail à cette adresse mail -->
         <a href="mailto:myshop@gmail.com">myshop@gmail.com</a>
         <!-- tel : Lien vers un numéro de téléphone , il permet de lancer un appel vers ce num -->
